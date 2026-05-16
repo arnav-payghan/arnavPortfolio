@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* FONTS */
+@font-face {
+    font-family: 'Gilroy_Bold';
+    src: url('./assets/fonts/Gilroy-Bold.ttf') format('truetype');
+}
+
+/* THEME */
+@theme {
+    --font-heading0: 'Gilroy_Bold', sans-serif;
+    --font-heading1: 'Gilroy_Bold', sans-serif;
+    --font-paragraph: 'Inter', sans-serif;
+
+    --text-heading0: 2.5rem;
+}
+
+/* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    font-family: var(--font-heading0);
+    font-size: var(--text-heading0);    
+    width: 100%;
+    height: 100%;
+    background: rgb(10,10,10);
+    color: white;
+}
