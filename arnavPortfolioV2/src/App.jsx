@@ -1,7 +1,13 @@
+import React from 'react';
+import BackgroundEffects from './components/BackgroundEffects.jsx';
+
 function App() {
   return (
     <div>
-      <h1>Arnav Payghan</h1>
+      <BackgroundEffects />
+      <h1>
+        Arnav Payghan
+      </h1>
     </div>
   )
 }
