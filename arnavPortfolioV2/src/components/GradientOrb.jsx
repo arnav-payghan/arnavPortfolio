@@ -1,21 +1,19 @@
 export default function GradientOrb({
-  size = 500,
-  top,
-  left,
-  right,
-  bottom,
+  className = "",
   color = "#ff4d00",
 }) {
   return (
     <div
-      className="absolute rounded-full blur-[180px] opacity-90"
+      className={`
+        absolute
+        rounded-full
+        blur-[120px]
+        md:blur-[160px]
+        lg:blur-[200px]
+        opacity-80
+        ${className}
+      `}
       style={{
-        width: `${size}px`,
-        height: `${size}px`,
-        top,
-        left,
-        right,
-        bottom,
         background: color,
       }}
     />

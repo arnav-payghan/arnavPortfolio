@@ -8,9 +8,10 @@
 @theme {
   --font-heading0: "Gilroy_Bold", sans-serif;
   --font-heading1: "Gilroy_Bold", sans-serif;
-  --font-paragraph: "Inter", sans-serif;
+  --font-paragraph: "Gilroy_Bold", sans-serif;
 
-  --text-heading0: 8rem;
+  --text-heading0: 14rem;
+  --text-paragraph: 2rem;
 }
 
 * {
