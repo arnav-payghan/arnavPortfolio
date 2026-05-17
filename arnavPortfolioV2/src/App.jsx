@@ -1,15 +1,25 @@
-import React from 'react';
-import BackgroundEffects from './components/BackgroundEffects.jsx';
+import BackgroundEffects from "./components/BackgroundEffects";
 
 function App() {
   return (
-    <div>
+    <div className="relative min-h-screen bg-transparent overflow-hidden">
+      
+      {/* background layers */}
       <BackgroundEffects />
-      <h1>
-        Arnav Payghan
-      </h1>
+
+      {/* name */}
+      <div className="relative z-10 px-16 pt-20 baseMarginLeft">
+        <h1
+          style={{
+            fontFamily: 'var(--font-heading0)',
+            fontSize: 'var(--text-heading0)'
+          }}
+        >
+          arnav
+        </h1>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,18 +1,27 @@
-import React from 'react';
-import GradientOrb from "./GradientOrb.jsx";
+import GradientOrb from "./GradientOrb";
+import GridBackground from "./GridBackground";
 
-function BackgroundEffects() {
+export default function BackgroundEffects() {
   return (
-    <div className="absolute inset-0 overflow-hidden -z-10">
+    <>
+      {/* grid */}
+      <GridBackground />
+
+      {/* left hero glow */}
       <GradientOrb
-        top="0px"
-        left="0px"
-        size="500px"
-        from="#ff00ff"
-        to="#00ffff"
-        />
-    </div>
+        size={700}
+        top="150px"
+        left="-200px"
+        color="#ff4d00"
+      />
+
+      {/* bottom right glow
+      <GradientOrb
+        size={650}
+        bottom="-100px"
+        right="-150px"
+        color="#ff4d00"
+      /> */}
+    </>
   );
 }
-
-export default BackgroundEffects;

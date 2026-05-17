@@ -1,32 +1,23 @@
-import React from 'react';
-
-function GradientOrb({
-  top = "50px",
-  left = "50px",
+export default function GradientOrb({
+  size = 500,
+  top,
+  left,
   right,
   bottom,
-  size = "400px",
-  from = "",
-  to = "",
-  opacity = 0.5,
-  blur = "10px"
+  color = "#ff4d00",
 }) {
   return (
     <div
-      className="absolute rounded-full"
+      className="absolute rounded-full blur-[180px] opacity-90"
       style={{
+        width: `${size}px`,
+        height: `${size}px`,
         top,
         left,
         right,
         bottom,
-        width: size,
-        height: size,
-        background: `linear-gradient(to right, ${from}, ${to})`,
-        filter: `blur(${blur})`,
-        opacity
+        background: color,
       }}
     />
   );
 }
-
-export default GradientOrb;
