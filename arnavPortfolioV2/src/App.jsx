@@ -14,7 +14,7 @@ function App() {
               text-sm
               sm:text-base
               md:text-lg
-              lg:text-xl
+              lg:text-2xl
               mb-2
             "
           >
